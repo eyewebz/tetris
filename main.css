@@ -1,0 +1,43 @@
+/* Add some styling to make it visually appealing */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  
+  button {
+    margin: 4px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* Adjust width as needed */
+    grid-template-rows: repeat(20, 30px); /* Adjust height as needed */
+    gap: 1px; /* Gap between cells */
+    background-color: #eee;
+    border: 1px solid #333;
+  }
+  
+  .cell {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #fff; /* Add a border to separate cells */
+  }
+  
+  /* Add styles for filled cells */
+  .filled {
+    background-color: #333;
+  }
